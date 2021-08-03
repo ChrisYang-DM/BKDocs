@@ -36,7 +36,7 @@
 - 修改 bk_install 脚本
 
 ```bash
- sed -i '/start job/i\\t./pcmd.sh\ -m\ job\ \"sed -i '\'/JAVA_OPTS/c\ JAVA_OPTS="-Xms128m -Xmx128m"\'\ /etc/sysconfig/bk-job-*\" bk_install
+sed -i '/start job/i\\t./pcmd.sh\ -m\ job\ \"sed -i '\'/JAVA_OPTS/c\ JAVA_OPTS="-Xms128m -Xmx128m"\'\ /etc/sysconfig/bk-job-*\" bk_install
 ```
 
 - install.config 这个文件安装脚本会自动生成，无需自行配置。
